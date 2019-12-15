@@ -55,7 +55,7 @@
 				isMoving=false;
 			});
 		}
-		var timer=setInterval(next,4000);
+		var timer=setInterval(next,3000);
 		//鼠标滑入清定时器
 		box.onmouseover=function(){
 			animate(left,{opacity:50});
@@ -66,7 +66,7 @@
 		box.onmouseout=function(){
 			animate(left,{opacity:0});
 			animate(right,{opacity:0});
-			timer=setInterval(next,4000);
+			timer=setInterval(next,3000);
 		}
 		right.onclick=next;
 		left.onclick=prev;
